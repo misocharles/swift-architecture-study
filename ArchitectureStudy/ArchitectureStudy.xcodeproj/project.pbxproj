@@ -16,6 +16,7 @@
 		CCF128D01F2F147D00745DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF128CE1F2F147D00745DDB /* LaunchScreen.storyboard */; };
 		CCF128DB1F2F147D00745DDB /* ArchitectureStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF128DA1F2F147D00745DDB /* ArchitectureStudyTests.swift */; };
 		CCF128E61F2F147D00745DDB /* ArchitectureStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF128E51F2F147D00745DDB /* ArchitectureStudyUITests.swift */; };
+		CCF128F51F2F1A7700745DDB /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF128F41F2F1A7700745DDB /* Issue.swift */; };
 		CEC89E63D01F9698CA24243C /* Pods_ArchitectureStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CD0EB6C8388305C972068C /* Pods_ArchitectureStudyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		CCF128E11F2F147D00745DDB /* ArchitectureStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF128E51F2F147D00745DDB /* ArchitectureStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureStudyUITests.swift; sourceTree = "<group>"; };
 		CCF128E71F2F147D00745DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF128F41F2F1A7700745DDB /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Issue.swift; path = Model/Issue.swift; sourceTree = "<group>"; };
 		E9307B9FEA8B22AED0E9C54B /* Pods-ArchitectureStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureStudy/Pods-ArchitectureStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF128C51F2F147D00745DDB /* AppDelegate.swift */,
+				CCF128F31F2F1A1800745DDB /* Model */,
 				CCF128C71F2F147D00745DDB /* ViewController.swift */,
 				CCF128C91F2F147D00745DDB /* Main.storyboard */,
 				CCF128CC1F2F147D00745DDB /* Assets.xcassets */,
@@ -163,6 +166,14 @@
 				CCF128E71F2F147D00745DDB /* Info.plist */,
 			);
 			path = ArchitectureStudyUITests;
+			sourceTree = "<group>";
+		};
+		CCF128F31F2F1A1800745DDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCF128F41F2F1A7700745DDB /* Issue.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +462,7 @@
 			files = (
 				CCF128C81F2F147D00745DDB /* ViewController.swift in Sources */,
 				CCF128C61F2F147D00745DDB /* AppDelegate.swift in Sources */,
+				CCF128F51F2F1A7700745DDB /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +721,7 @@
 				CCF128EC1F2F147D00745DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF128ED1F2F147D00745DDB /* Build configuration list for PBXNativeTarget "ArchitectureStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +730,7 @@
 				CCF128EF1F2F147D00745DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF128F01F2F147D00745DDB /* Build configuration list for PBXNativeTarget "ArchitectureStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +739,7 @@
 				CCF128F21F2F147D00745DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
