@@ -12,7 +12,11 @@ import Alamofire
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var issueData: [Issue] = [Issue]()
+    var issueData: [Issue] = [Issue]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +46,14 @@ extension ViewController {
         let urlString = "https://api.github.com/repos/lkzhao/Hero/issues"
         Alamofire.request(urlString).responseJSON { (response) in
             if let json = response.result.value as? [Dictionary<String, Any>] {
+                var tempIssueData = [Issue]()
                 for data in json {
                     if let title = data["title"] as? String, let number = data["number"] as? Int {
                         let issue = Issue(title: title, number: number)
-                        self.issueData.append(issue)
+                        tempIssueData.append(issue)
                     }
                 }
-                self.tableView.reloadData()
+                self.issueData = tempIssueData
             }
         }
     }
